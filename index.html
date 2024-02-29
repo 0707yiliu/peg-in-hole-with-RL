@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Rigid/Soft body Insertion</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Compliant Robust Control for Robotic Insertion of Soft Bodies
+            </h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://0707yiliu.github.io/" target="_blank">Yi Liu</a><sup>*</sup>,</span>
+                <span class="author-block">
+                  <a href="https://research.ugent.be/web/person/andreas-verleysen-0/en" target="_blank">Andreas Verleysen</a>,</span>
+                  <span class="author-block">
+                    <a href="https://ai.ugent.be/people/Franciswyffels.en.html" target="_blank">Francis wyffels</a>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">IDLab-AIRO, elis, Ghent University - imec<br>ICRA 2023 workshop (this paper focuses on shape maching with rigid body)</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding Author</small></span>
+                    <span class="eql-cntrb"><small><br>Aug 25, 2023</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://openreview.net/forum?id=CN2Zr3ZYHF" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper in ICRA 2023 workshop</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <!-- <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span> -->
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/0707yiliu/peg-in-hole-with-RL" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <!-- <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span> -->
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+
+        <source src="static/videos/banner_video.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      </h2>
+    </div>
+  </div>
+</section> -->
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            This work proposes a novel framework for insertion-type tasks with soft bodies, such as cleaning a bottle with a soft brush (using soft tools to explore complex paths)
+            <br /> <br />
+            First, a multimodal model based on vision and force perception is trained, 
+            where we use domain randomization to ease the simulation-to-real difficulty of models with soft bodies. 
+            <br />
+            Second, we propose a dynamic safety lock method based on force perception, 
+            which is embedded in the training model to improve the success rate (making the tool explore and traverse the hole's path successfully) 
+            and the security (tools and holes are not damaged) of tasks. 
+            <br />
+            Finally, we perform experiments in simulation and the real world, and the success rate of our proposed method reaches 85.14% in simulation and 83.45% in the real world. 
+            Ablation experiments in the real world demonstrate that our method is effective for complex paths and soft bodies with varying deformation intensities.
+            <br /> <br />
+            (This work is an extension of the ICRA workshop work. 
+            The most significant difference is that this work focuses on the robot's ability to insert soft bodies and explore complex paths, 
+            while the basic workshop work focuses on the shape matching capabilities of rigid body insertions.)
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="content has-text-centered">
+          <video id="replay-video"
+                 controls
+                 muted
+                 preload
+                 playsinline
+                 width="120%">
+            <source src="static/videos/full.mp4"
+                    type="video/mp4">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video abstract -->
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Overview</h2>
+          <p>
+            The overview of the robotics soft bodies insertion policy.
+            We use the MUJOCO as the simulator to build up the whole sim-environment, which contains the hole, soft objects and manipulator.
+            The RL model provides the policy <math><mi>&pi;</mi></math> to the robot, which contians the domain randomization method.
+            We test different holes and soft bodies in the real world to demonstrate the effectiveness of the RL model.
+          </p>
+          <img src="static/images/framework.jpg" alt="MY ALT TEXT"/>
+        </div>
+      </div>
+
+      <div class="column">
+        <h2 class="title is-3">Dynamic Safety Lock with RL</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <p>
+              Network structure of robot insertion models. 
+              The entire network is divided into three parts, the environment, the agent network, and the dynamic safety lock (DSL).
+              DSL dynamically compensates the movement of the end of the robot, 
+              and the degree of compensation depends on the magnitude of the force feedback and the magnitude of the gain.
+            </p>
+            <img src="static/images/network.jpg" alt="MY ALT TEXT"/>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <!-- Trainning. -->
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Trainning in Simulation</h2>
+        <p>
+          Trainning performance. 
+          VFTM means the model combine the F/T sensor's information and the visual informantion, we compare three types of model.
+          (VFTM vs. VFTM with admittance controller vs. VFTM with DSL)
+        </p>
+        <div class="content has-text-centered">
+          <img src="static/images/train.png" alt="MY ALT TEXT"/>
+        </div>
+      </div>
+    </div>
+    <!-- DR pos. -->
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Domain randomization for hole position</h2>
+        <p>
+          Perform domain randomization on the observation at hole locations. We use the same hole and the same object to test.
+        </p>
+        <div class="content has-text-centered">
+          <video id="replay-video"
+                 controls
+                 muted
+                 preload
+                 playsinline
+                 width="70%">
+            <source src="static/videos/dr_pos.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+    <!-- DR soft body. -->
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Domain randomization for soft bodies</h2>
+        <p>
+          Perform domain randomization on the soft bodies, which contains the soft body's stiffness and damping. 
+          We test the soft bodies with different deformation intensities.
+        </p>
+        <div class="content has-text-centered">
+          <video id="replay-video"
+                 controls
+                 muted
+                 preload
+                 playsinline
+                 width="70%">
+            <source src="static/videos/dr_soft_plat.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+    <!-- DR soft body. -->
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Insertion task with soft bodies</h2>
+        <p>
+          You can see here how different holes are inserted with different objects.
+        </p>
+        <div class="content has-text-centered">
+          <video id="replay-video"
+                 controls
+                 muted
+                 preload
+                 playsinline
+                 width="70%">
+            <source src="static/videos/fullDSLassembly.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Youtube video -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <h2 class="title is-3">Demo for ICRA 2023 workshop (shape maching with rigid body)</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="publication-video">
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/1npPWYU3B6g?si=qlBr192itc_eW5o8&amp;controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End youtube video -->
+
+
+
+<!-- Video carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Another Carousel</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+
+            <source src="static/videos/carousel1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+
+            <source src="static/videos/carousel2.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+
+            <source src="static/videos/carousel3.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End video carousel -->
+
+
+
+
+
+
+<!-- Paper poster -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster in ICRA 2023 workshop</h2>
+
+      <iframe  src="static/pdfs/icra_poster.pdf" width="100%" height="1000">
+          </iframe>
+        
+      </div>
+    </div>
+  </section>
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@inproceedings{liu2023a,
+        title     ={A Robust and Safe Strategy for Robotic Assembly},
+        author    ={Yi Liu, Andreas Verleysen and Francis wyffels},
+        booktitle ={Embracing Contacts - Workshop at ICRA 2023},
+        year      ={2023},
+        url       ={https://openreview.net/forum?id=CN2Zr3ZYHF}
+        }</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <!-- <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer> -->
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
